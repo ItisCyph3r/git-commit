@@ -1,0 +1,59 @@
+<%- include ('header') %> 
+<nav class="navbar navbar-expand-md navbar-dark bg-dark py-4">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 2rem;">Zapnode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarsExample04">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 ">
+                    <li class="nav-item px-0 px-md-1">
+                        <form action="/" method="post">
+                            <button class="bg-transparent border-0" name="home" value="homepage">
+                                <span class="nav-link active" aria-current="page" href="#">Home</span>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item px-0 px-md-1">
+                        <form action="/" method="post">
+                            <button class="bg-transparent border-0" name="about" value="aboutpage">
+                                <span class="nav-link" aria-current="page" href="#">About Us</span>
+                            </button>
+                        </form>
+                    </li>
+                    
+                    <li class="nav-item px-0 px-md-1">
+                            <form action="/" method="post">
+                            <button class="bg-transparent border-0" name="contact" value="contactpage">
+                                <span class="nav-link" aria-current="page" href="#">Contact Us</span>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item px-0 px-md-1">
+                            <form action="/" method="post">
+                            <button class="bg-transparent border-0" name="post" value="newpage">
+                                <span class="nav-link" aria-current="page" href="#">New Post</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<div class="container mt-3">
+    <form action="/" method="post">
+        <label for="title" style="font-size: 1.5rem;">Title</label>
+        <input type="text" class="form-control" id="title" name="title" autocomplete="off">
+
+        <label for="post" style="font-size: 1.5rem;">Post</label><br>
+        <textarea id="post" name="post" autocomplete="off"></textarea>
+        
+        <button class="btn btn-lg btn-dark" type="submit">
+            Publish
+        </button>
+    </form>
+</div>
+<%- include ('footer') %> 
